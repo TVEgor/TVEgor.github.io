@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Личная страница</title>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+		<script>
+			function clock() {
+			var d = new Date();
+			var month_num = d.getMonth()
+			var day = d.getDate();
+			var hours = d.getHours();
+			var minutes = d.getMinutes();
+			var seconds = d.getSeconds();
+
+			month=new Array("января", "февраля", "марта", "апреля", "мая", "июня","июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+			if (day <= 9) day = "0" + day;
+			if (hours <= 9) hours = "0" + hours;
+			if (minutes <= 9) minutes = "0" + minutes;
+			if (seconds <= 9) seconds = "0" + seconds;
+
+			date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() + " г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+			if (document.layers) {
+			document.layers.doc_time.document.write(date_time);
+			document.layers.doc_time.document.close();
+			}
+			else document.getElementById("doc_time").innerHTML = date_time;
+			setTimeout("clock()", 1000);
+			}
+		</script>
+		<link rel="stylesheet" href="styel.css">
+	</head>
+	<body>
+			<h1>Личная страница</h1>
+			<p>Здравстувйте, меня зовут Егор<br>
+			Я студент 3-го курса Югорского Государсвтенного Университета<br>
+			Прохожу обучение по направлению Нефтегазовое дело<br>
+			И это моя первая страница созданная на языке програмирования HTML<br></p>
+		<div>
+			<table border="5">
+				<tr>
+					<th><img src="https://www.arkronix.ru/upload/medialibrary/184/18429cce508535b11bb81c2537d38279.jpg"height="300px"></th>
+					<th><img src="https://promplace.ru/articles_img/fontannaya_armatura.jpg"height="300px"></th>
+					<th><img src="https://ugra-news.ru/upload/iblock/a93/5.jpg"height="300px"></th>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<table border="1">
+				<tr>
+					<th>Ссылка для связи со мной</th>
+				</tr>
+				<tr>
+					<th>
+						<a href="https://vk.com/egorsever86"><img src="https://smoservice.media/upload/iblock/db8/db85f3e68535ea246dde358cbb02d9e3.png" width="50" 
+						height="50" alt="Вконтакте">
+						</a>
+					</th>
+				</tr>
+			</table>
+		</div>
+		<span id="doc_time">
+			Дата и время
+		</span>
+		<script>
+			clock();
+		</script>
+		<script>
+			//alert("Добро пожаловать, на мой сайт");
+		</script>
+		
+	</body>
+</html>

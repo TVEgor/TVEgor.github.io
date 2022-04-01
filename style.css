@@ -1,0 +1,28 @@
+body{
+	background-image:url(https://regnum.ru/uploads/pictures/news/2016/05/27/regnum_picture_1464348717273416_normal.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	text-align:center;
+}
+div{
+	margin:30px;
+}
+h1{
+	text-align:center;
+	color:blue;
+	background-color:#E4E4E4;
+	border:1px solid #323232
+}
+p{
+	color:#1E90FF;
+	background-color:#E4E4E4;
+}
+table{
+	width:300px;
+	margin:auto;
+	border-color:#323232;
+	background-color:#E4E4E4;
+}
+span{
+	background-color:#E4E4E4;
+}
